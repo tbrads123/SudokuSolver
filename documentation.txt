@@ -1,3 +1,5 @@
+9-23-18
+
 @AoA - array of arrays. AoA[][]. The first set is the cell id in row, column, box. 
        For example. Counted in right to left from top left. For example AoA[2][0] 
        would be the third cell and printing AoA[2][0] would give 020. For 0 row, 2 
