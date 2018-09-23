@@ -1,0 +1,7 @@
+Starting at row-zero column-zero and going from top-left to bottom right a row at a time find the lowest value (1-9) that works in each unset cell (a cell containing a zero). If you encounter a cell that has no value (1-9) that works you must back-track to the cell most recently set by this algorithm (not one originally set in the puzzle or set by the Single-Solution-Cell algorithm) and find the next highest value that works in that cell. If no value works in the cell, set it to zero and continue back-tracking to the first cell that does allow a change. Once you find a cell that allows a change then continue forward from that changed cell until you have set all of the cells in the puzzle.
+
+-- Next, the main uses the display function to display puzzle[][] (now solved), and also prints the statistics. 
+
+
+Those are my requirements. I'm allowed to write more functions to be called by any of the ones I've written, but I can't change the main at all. Your solutions use 1D arrays, but it seems I'm working with 2D arrays. As for testing, we're provided with test input and expected output files, we have to diff-test them with an executable my teacher has written (how our program should look and act)
+

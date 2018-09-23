@@ -1,0 +1,40 @@
+@AoA - array of arrays. AoA[][]. The first set is the cell id in row, column, box. 
+       For example. Counted in right to left from top left. For example AoA[2][0] 
+       would be the third cell and printing AoA[2][0] would give 020. For 0 row, 2 
+       column, 0 box. 
+
+cherry - when a cell has only one possible value
+
+
+$daddy_y - global variable that represents the cell number
+
+AoA[x][0] = Cell Id
+AoA[x][1] = hard value or zero
+AoA[x][2] = 99 if hard value, 0 otherwise
+
+
+
+
+
+open game file or die
+populate AoA[][] 
+populate hard values
+	if AoA[x][1] > 0, then set AoA[x][2] to 99
+while there are cherries
+	iterate thru AoA
+	
+
+
+
+
+
+allowed()
+gets as input $daddy_y
+create @temp_array that is set to 1-9
+split AoA[$daddy_y][0] and get $row, $col, $box
+iterate thru AoA
+	- will find all cells that match the same row, col and box of the cell being 
+          looked at.
+        - if find a number in row, col or box, set that position in @temp_array to zero, 
+          so when finished @temp_array will have zeros and where a number was found and 
+          what is left is what are possible values. 	

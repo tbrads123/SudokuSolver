@@ -1,0 +1,1 @@
+open(INFILE, "F:\\NewProject\\data\\game6.txt") or die("Unable to open file");
